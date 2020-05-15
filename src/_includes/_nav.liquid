@@ -1,0 +1,26 @@
+<div class="navigation-top">
+  <div class="wrap">
+    <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
+
+      <div class="menu-default-menu-container">
+        <ul id="top-menu" class="menu">
+          {% for link in nav %}
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+              <a href="{{ link.href }}">{{ link.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <a href="#content" class="menu-scroll-down">
+        <svg class="icon icon-arrow-right" aria-hidden="true" role="img" viewBox="0 0 43 32">
+          <path class="path1"
+            d="M0.356 17.956c0.178 0.178 0.533 0.356 0.711 0.356h33.778l-10.311 10.489c-0.178 0.178-0.356 0.533-0.356 0.711 0 0.356 0.178 0.533 0.356 0.711l1.6 1.6c0.178 0.178 0.533 0.356 0.711 0.356s0.533-0.178 0.711-0.356l14.756-14.933c0.178-0.356 0.356-0.711 0.356-0.889s-0.178-0.533-0.356-0.711l-14.756-14.933c0-0.178-0.356-0.356-0.533-0.356s-0.533 0.178-0.711 0.356l-1.6 1.6c-0.178 0.178-0.356 0.533-0.356 0.711s0.178 0.533 0.356 0.711l10.311 10.489h-33.778c-0.178 0-0.533 0.178-0.711 0.356-0.356 0.178-0.533 0.356-0.533 0.711v2.311c0 0.178 0.178 0.533 0.356 0.711z">
+          </path>
+        </svg>
+
+        <span class="screen-reader-text">Scroll down to content</span>
+      </a>
+    </nav>
+  </div>
+</div>
