@@ -1,11 +1,11 @@
-<article id={{ s.data.title | slug }} data-section-order={{ s.data.section_order }} class="twentyseventeen-panel page type-page status-publish hentry">
+<article id={{ s.title | slug }} data-section-order={{ s.order }} class="twentyseventeen-panel page type-page status-publish hentry">
   <div class="panel-content">
     <div class="wrap">
       <header class="entry-header">
-        <h2 class="entry-title">{{ s.data.title }}</h2>
+        <h2 class="entry-title">{{ s.title }}</h2>
       </header>
       <div class="entry-content">
-        {{- s.templateContent -}}
+        {{- s.content -}}
       </div>
     </div>
   </div>

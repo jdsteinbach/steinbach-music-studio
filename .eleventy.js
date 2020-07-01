@@ -6,24 +6,8 @@ const mdOptions = {
   linkify: true,
   typographer: true
 };
-const mdAnchorOpts = {
-  permalink: true,
-  permalinkClass: 'anchor-link',
-  permalinkSymbol: '#',
-  level: [1, 2, 3, 4]
-};
 
 module.exports = eleventyConfig => {
-  /**
-   * Collections
-   */
-  eleventyConfig.addCollection('sections', collection => {
-    return collection
-      .getAll()
-      .filter(page => page.inputPath.match(/\/sections\//) !== null)
-      .sort((a, b) => a.data.section_order - b.data.section_order);
-  });
-
   /**
    * Better Markdown
    */

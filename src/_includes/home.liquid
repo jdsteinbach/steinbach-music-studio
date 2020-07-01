@@ -1,5 +1,8 @@
 ---
 layout: _base
+body_class: twentyseventeen-front-page home
 ---
 
-{{ content }}
+{%- for s in siteContent.sections -%}
+  {%- include _section -%}
+{%- endfor -%}
