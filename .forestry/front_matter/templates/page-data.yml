@@ -4,13 +4,18 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Page Title
 - type: text
   name: layout
-  label: layout
+  label: Page Layout
+  description: Should be "home" for home page or "page" for a standard page
+  config:
+    required: false
+  default: page
 - type: text
   name: permalink
-  label: permalink
+  label: Page URL
 - type: text
   name: body_class
-  label: body_class
+  label: Body Class
+  description: 'Optional: adds class to `body'
