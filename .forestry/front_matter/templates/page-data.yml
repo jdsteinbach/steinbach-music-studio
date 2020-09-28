@@ -1,0 +1,16 @@
+---
+label: Page Data
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: body_class
+  label: body_class
