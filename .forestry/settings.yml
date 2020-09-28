@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: src/sections
+  label: Home Page Sections
+  create: all
+  match: "**/*.md"
+  templates:
+  - home-page-section-data
+- type: directory
   path: src
   label: Other Pages
   create: all
@@ -12,13 +19,6 @@ sections:
   exclude: home.md
   templates:
   - page-data
-- type: directory
-  path: src/sections
-  label: Home Page Sections
-  create: all
-  match: "**/*.md"
-  templates:
-  - home-page-section-data
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
