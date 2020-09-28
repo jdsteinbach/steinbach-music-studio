@@ -1,0 +1,16 @@
+---
+label: Home Page Section Data
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: number
+  name: section_order
+  label: section_order
