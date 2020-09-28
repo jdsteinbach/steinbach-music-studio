@@ -4,12 +4,18 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: src/home.md
+  label: Home Page
+  match: "**/*"
 - type: directory
   path: src
   label: Other Pages
   create: all
   match: "*.md"
-  exclude: sections/*
+  exclude: sections/*,home.md
+  templates:
+  - page-data
 - type: directory
   path: src/sections
   label: Home Page Sections
