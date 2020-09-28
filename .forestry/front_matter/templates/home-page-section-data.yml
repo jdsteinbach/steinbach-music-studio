@@ -4,13 +4,14 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Section Title
 - type: text
   name: layout
-  label: layout
+  label: Page Layout
 - type: text
   name: permalink
-  label: permalink
+  label: Page URL
 - type: number
   name: section_order
-  label: section_order
+  label: Section Order
+  description: Controls the order Home Page Sections are shown in
